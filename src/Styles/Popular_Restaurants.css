@@ -1,0 +1,189 @@
+.restaurants_section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0px;
+    position: relative;
+    height: auto;
+}
+
+.restaurants_section .restaurants_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 30px 0px;
+    position: relative;
+}
+
+.restaurants_section .restaurants_grid .card {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: var(--bg-white);
+    border: 1px solid #EEEEEE;
+    padding: 12px 12px 0px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.restaurants_section .restaurants_grid .card:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.restaurants_grid .card .image {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.restaurants_grid .card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.restaurants_grid .card:hover img {
+    transform: scale(1.1)
+}
+
+
+.restaurants_grid .card .image .overlay {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.979) 0%, rgba(240, 116, 82, 0) 68%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.restaurants_grid .card .image .overlay p{
+    position:absolute ;
+    bottom: 7px;
+    left: 10px;
+    color: var(--text-white);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.restaurants_grid .card .info{
+    padding: 10px 0px;
+}
+
+.restaurants_grid .card .info .title_rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .info .title_rating .name{
+    font-weight: 700;
+    color: var(--text-dark);
+    font-size: 18px;
+}
+
+.card .info .title_rating  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 500;
+ 
+}
+
+.card .info .title_rating  .rating p{
+    background-color: var(--bg-green);
+    color: var(--text-white);
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.restaurants_grid .card .info .tags{
+    font-weight: 500;
+    color: var(--text-dark-light);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.restaurants_grid .card .info .border_dotted{
+    height: 1px;
+    width: 100%;
+    border-top: 2px solid  #EEEEEE ;
+    border-top-style: dashed;
+    margin: 10px 0px;
+}
+
+.restaurants_grid .card .info .bottom_sect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.restaurants_grid .card .info .bottom_sect .location  {
+   font-size: 16px;
+   font-weight: 500;
+   width: 50px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+.restaurants_grid .card .info .bottom_sect .other{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 15px;
+}
+
+.restaurants_grid .card .info .bottom_sect .other .distance{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-right: 1px solid #EEEEEE;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.restaurants_grid .card .info .bottom_sect .other .distance p{
+    background: rgb(246,159,39);
+    background: linear-gradient(90deg, rgba(246,159,39,1) 0%, rgba(240,116,82,1) 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: var(--text-white);
+    padding: 2px;
+    border-radius: 50%;
+}
+
+
+.restaurants_grid .card .info .bottom_sect .other .time{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+
+}
+
+.restaurants_grid .card .info .bottom_sect .other .time p{
+    background: rgb(246,159,39);
+    background: linear-gradient(90deg, rgba(246,159,39,1) 0%, rgba(240,116,82,1) 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: var(--text-white);
+    padding: 2px;
+    border-radius: 50%;
+}

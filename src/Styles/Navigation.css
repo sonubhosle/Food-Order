@@ -1,0 +1,219 @@
+.navigation {
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    padding: 0px 3%;
+    background-color: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation .logo_name {
+    text-decoration: none;
+    color: var(--text-white);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 28px;
+    display: flex;
+    gap: 4px;
+     background: rgb(246,159,39);
+     background: linear-gradient(90deg, rgba(246,159,39,1) 0%, rgba(240,116,82,1) 50%);
+     -webkit-background-clip: text;
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+
+}
+
+.navigation .logo_name p {
+    background: rgb(246,159,39);
+    background: linear-gradient(90deg, rgba(246,159,39,1) 0%, rgba(240,116,82,1) 50%);
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: 19px;
+}
+
+.navigation .left_nav {
+    width: 60%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    align-items: center;
+}
+
+.navigation .left_nav .search {
+    width: 60%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.navigation .left_nav .search .search_bar {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.041);
+    border: none;
+    padding-left: 15px;
+    color: var(--text-white);
+    border-radius: 3px;
+    transition: 0.5s ease-in;
+    border: 1px solid rgba(255, 255, 255, 0.041);
+
+}
+
+.navigation .left_nav .search .search_icon {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+    color: var(--text-light);
+}
+
+.navigation .left_nav .search .search_bar:focus {
+    border: 1px solid var(--bg-oranged);
+}
+
+.navigation .left_nav .menu_list {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 30px;
+}
+
+.navigation .left_nav .menu_list .line {
+    height: 40px;
+    width: 1px;
+    background-color: var(--text-light);
+}
+
+.navigation .left_nav .menu_list a {
+    color: var(--text-light);
+    font-size: 25px;
+    transition: 0.5s ease-in;
+
+}
+
+.navigation .left_nav .menu_list a:hover {
+    color: var(--text-white);
+}
+
+.navigation .left_nav .menu_list .profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navigation .left_nav .menu_list .profile .image{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.041);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.041);
+    transition: 0.5s ease;
+}
+
+.navigation .left_nav .menu_list .profile:hover .image{
+    border: 1px solid var(--bg-oranged);
+
+}
+
+.navigation .left_nav .menu_list .profile .name{
+    color: var(--text-white);
+    font-size: 13px;
+    margin-bottom: 5px;
+    transition: 0.5s ease;
+}
+
+.navigation .left_nav .menu_list .profile:hover .name{
+    color: var(--bg-oranged);
+}
+
+
+.navigation .left_nav .menu_list .profile p{
+    color: var(--text-light);
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+
+.navigation .left_nav .menu_list .profile:hover p{
+    color: var(--text-white);
+}
+
+
+.navigation .left_nav .menu_list .profile .account_box{
+    position: absolute;
+    top: 85px;
+    right: -20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s linear;
+    background-color: var(--bg-white);
+    border-radius: 5px;
+    width: 200px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.301) 2px 5px 10px 0px;
+    padding: 10px;
+}
+
+.navigation .left_nav .menu_list .profile:hover .account_box{
+    opacity: 9;
+    visibility: visible;
+    top: 56px;
+}
+
+
+.menu_list .profile .account_box .menu_name{
+    color: var(--text-dark-light);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 6px 5px;
+
+}
+
+.menu_list .profile .account_box .orange{
+    color: var(--bg-oranged);
+}
+.menu_list .profile .account_box .hr{
+    width: 100%;
+    height: 1px;
+    background-color: var(--bg-oranged);
+    margin: 5px 0px;
+}
+
+
+@media(max-width:991px){
+    .navigation .left_nav {
+        width: 70%;
+    }
+}
+
+@media(max-width:768px){
+    .navigation .left_nav .search {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        top: 70px;
+        background-color: var(--bg-dark);
+        left: 0;
+        padding: 0px 2%;
+
+    }
+
+    .navigation .left_nav .search .search_icon{
+        top: 18px;
+        right: 27px;
+    }
+}
