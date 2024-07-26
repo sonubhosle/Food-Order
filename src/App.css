@@ -1,5 +1,21 @@
 
-
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--bg-dark); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: rgb(246,159,39);
+    background: linear-gradient(90deg, rgba(246,159,39,1) 0%, rgb(255, 74, 24) 50%);
+  }
+  
 
 
 @media(max-width:768px){

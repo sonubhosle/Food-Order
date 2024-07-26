@@ -5,7 +5,7 @@ import Headings from '../Heading/Heading'
 
 const Popular_Restaurants = () => {
     return (
-        <div className='restaurants_section'>
+        <div className='restaurants_section bg-light'>
             <Headings title={"Popular Restaurants"} subtitle={"Find nearby popular Restaurants."} />
             <div className="restaurants_grid">
                 {

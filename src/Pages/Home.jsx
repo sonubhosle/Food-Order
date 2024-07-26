@@ -4,6 +4,7 @@ import Categories from '../Components/Categories/Categories';
 import Deals from '../Components/Deals/Deals';
 import Brands from '../Components/Brands/Brands';
 import Popular_Restaurants from '../Components/Popular_Restaurants/Popular_Restaurants';
+import Featured_Restaurants from '../Components/Featured_Restaurants/Featured_Restaurants';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Deals />
       <Brands />
       <Popular_Restaurants />
+      <Featured_Restaurants />
     </div>
   )
 }

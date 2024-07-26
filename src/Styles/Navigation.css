@@ -41,7 +41,6 @@
     width: 60%;
     height: auto;
     display: flex;
-    gap: 20px;
     justify-content: right;
     align-items: center;
 }
@@ -83,7 +82,7 @@
 }
 
 .navigation .left_nav .menu_list {
-    width: 300px;
+    width: 250px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -92,15 +91,17 @@
 }
 
 .navigation .left_nav .menu_list .line {
-    height: 40px;
+    height: 50px;
     width: 1px;
-    background-color: var(--text-light);
+    background-color: #2b2b2b;
 }
 
 .navigation .left_nav .menu_list a {
     color: var(--text-light);
     font-size: 25px;
     transition: 0.5s ease-in;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -123,6 +124,7 @@
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.041);
     transition: 0.5s ease;
+    overflow:hidden;
 }
 
 .navigation .left_nav .menu_list .profile:hover .image{
@@ -130,10 +132,15 @@
 
 }
 
+.navigation .left_nav .menu_list .profile .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .navigation .left_nav .menu_list .profile .name{
     color: var(--text-white);
     font-size: 13px;
-    margin-bottom: 5px;
     transition: 0.5s ease;
 }
 
@@ -171,20 +178,31 @@
 .navigation .left_nav .menu_list .profile:hover .account_box{
     opacity: 9;
     visibility: visible;
-    top: 56px;
+    top: 58px;
 }
 
 
 .menu_list .profile .account_box .menu_name{
     color: var(--text-dark-light);
-    font-weight: 500;
     font-size: 16px;
-    padding: 6px 5px;
+    padding: 5px 5px;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Roboto',sans-serif;
 
+
+}
+
+.menu_list .profile .account_box .menu_name:hover{
+    color: var(--bg-oranged);
 }
 
 .menu_list .profile .account_box .orange{
     color: var(--bg-oranged);
+    font-weight: 600;
+    font-size: 17px;
 }
 .menu_list .profile .account_box .hr{
     width: 100%;

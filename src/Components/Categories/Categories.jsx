@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../Styles/Categories.css'
 import Heading from '../Heading/Heading'
+import { useNavigate } from 'react-router-dom'
 
 const categories = [
     {
@@ -102,6 +103,9 @@ const categories = [
 ]
 
 const Categories = () => {
+
+  const navigate = useNavigate()
+  
     return (
         <div className='categories'>
             <Heading title={"Categories"} subtitle={"Browse out top categories here to discover different food cuision."}/>
@@ -109,7 +113,7 @@ const Categories = () => {
                 {
                     categories.map((item, index) => {
                         return (
-                            <div className="cat_box" key={index}>
+                            <div className="cat_box" key={index} onClick={() => navigate(`/food/${item.name}/${item.id}`)}>
                                 <img src={item.poster} alt={item.name} />
                                 <div className="name">{item.name}</div>
                             </div>

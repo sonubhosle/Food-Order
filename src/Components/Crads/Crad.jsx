@@ -2,10 +2,13 @@ import React from 'react'
 import {FaStar} from 'react-icons/fa'
 import { IoLocation } from "react-icons/io5";
 import { IoTime } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 
 const Crad = ({products}) => {
+ const navigate = useNavigate()
+    
   return (
-    <div className='card'>
+    <div className='card' onClick={() => navigate(`/products/food-name/5`)}>
         <div className="image">
             <img src="https://angular.pixelstrap.net/zomo/assets/images/product/vp-1.png" alt="" />
             <div className="overlay">
