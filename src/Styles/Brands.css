@@ -51,3 +51,15 @@
 .brands_section .brands_grid .brand_card:hover .name{
     color: var(--bg-oranged);
 }
+
+
+@media(max-width:991px){
+    .brands_section{
+        width: 100%;
+        padding: 50px 20px;
+    }
+    .brands_section .brands_grid{
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+    
+}

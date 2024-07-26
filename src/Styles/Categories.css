@@ -45,3 +45,23 @@
 .categories .category_grid .cat_box:hover .name{
     color: var(--bg-oranged);
 }
+
+
+@media(max-width:991px){
+    .categories{
+        width: 100%;
+        padding: 50px 20px;
+        height: auto;
+    }
+    .categories .category_grid{
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    }
+}
+
+@media(max-width:768px){
+    .categories .category_grid{
+        padding: 40px 0px;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+        gap: 10px;
+    }
+}

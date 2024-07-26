@@ -34,7 +34,7 @@
     border-radius: 50%;
     width: 8px;
     height: 8px;
-    margin-top: 19px;
+    margin-top: 22px;
 }
 
 .navigation .left_nav {
@@ -149,6 +149,11 @@
 }
 
 
+
+
+
+
+
 .navigation .left_nav .menu_list .profile p{
     color: var(--text-light);
     font-weight: 500;
@@ -234,4 +239,52 @@
         top: 18px;
         right: 27px;
     }
+    .navigation .left_nav .menu_list .profile .account_box{
+        right: 0;
+    }
+}
+
+
+
+@media(max-width:450px){
+
+    .navigation .left_nav .menu_list {
+        width: 300px;
+    }
+    .navigation .left_nav .menu_list .line {
+        display: none;
+    }
+    
+    .navigation .left_nav .menu_list a {
+       display: none;
+    
+    }
+    .navigation .left_nav .menu_list .profile .name{
+        display: none;
+    }
+    .navigation .left_nav .menu_list .profile p{
+        display: none;
+    }
+}
+
+@media(max-width:350px){
+    .navigation .left_nav{
+      width: 100px;
+
+    }
+    .navigation .left_nav .menu_list .profile{
+        position: unset;
+    }
+
+    .navigation .left_nav .menu_list .profile .account_box{
+       left: 3px;
+       width: 98%;
+       border-radius: 3px;
+    }
+    .navigation .left_nav .menu_list .profile:hover .account_box{
+        opacity: 9;
+        visibility: visible;
+        top: 70px;
+    }
+    
 }

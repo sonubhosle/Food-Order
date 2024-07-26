@@ -89,18 +89,10 @@ const footer = [
 
 const Footer = () => {
   return (
-    <>
-    <div className="subscription">
-      <div className="left_text">Don't pass up our fantastic discounts. email offers from all of our best eateries</div>
-      <div className="right_search">
-        <input type="text" placeholder='Enter your email' />
-        <button>Subscribe Now</button>
-      </div>
-    </div>
     <footer>
       <div className="footer_container">
         <div className="left_sect">
-          <div className="logo">ZOMO</div>
+          <div className="logo">ZOMO <p></p></div>
           <p>Welcome to our online order website! Here, you can browse our wide selection of products and place orders from the comfort of your own home.</p>
           <div className="footer_icons">
             <Link><CgFacebook /></Link>
@@ -126,7 +118,6 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-    </>
   )
 }
 
